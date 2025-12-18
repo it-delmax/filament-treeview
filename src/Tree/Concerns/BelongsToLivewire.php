@@ -1,8 +1,8 @@
 <?php
 
-namespace IT_Delmax\FilamentTreeView\Tree\Concerns;
+namespace ItDelmax\FilamentTreeView\Tree\Concerns;
 
-use IT_Delmax\FilamentTreeView\Contracts\HasTree;
+use ItDelmax\FilamentTreeView\Contracts\HasTree;
 
 trait BelongsToLivewire
 {

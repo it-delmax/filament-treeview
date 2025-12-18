@@ -1,9 +1,9 @@
 <?php
 
-namespace IT_Delmax\FilamentTreeView\Tests\Factories;
+namespace ItDelmax\FilamentTreeView\Tests\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use IT_Delmax\FilamentTreeView\Tests\Models\Category;
+use ItDelmax\FilamentTreeView\Tests\Models\Category;
 
 class CategoryFactory extends Factory
 {

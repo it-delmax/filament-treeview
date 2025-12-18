@@ -1,7 +1,7 @@
 <?php
 
 use Filament\Support\Enums\Alignment;
-use IT_Delmax\FilamentTreeView\Fields\IconField;
+use ItDelmax\FilamentTreeView\Fields\IconField;
 
 it('can create icon field', function () {
     $field = IconField::make('is_active');

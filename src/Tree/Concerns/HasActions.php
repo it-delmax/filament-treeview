@@ -1,6 +1,6 @@
 <?php
 
-namespace IT_Delmax\FilamentTreeView\Tree\Concerns;
+namespace ItDelmax\FilamentTreeView\Tree\Concerns;
 
 use Filament\Actions\Action;
 use Filament\Actions\BulkAction;

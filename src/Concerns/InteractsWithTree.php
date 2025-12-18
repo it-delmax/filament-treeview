@@ -1,10 +1,10 @@
 <?php
 
-namespace IT_Delmax\FilamentTreeView\Concerns;
+namespace ItDelmax\FilamentTreeView\Concerns;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\Relation;
-use IT_Delmax\FilamentTreeView\Tree;
+use ItDelmax\FilamentTreeView\Tree;
 
 trait InteractsWithTree
 {
@@ -335,8 +335,8 @@ trait InteractsWithTree
      */
     protected function resolveTreeAction(array $action, array $parentActions): \Filament\Actions\Action
     {
-        if (! ($this instanceof \IT_Delmax\FilamentTreeView\Contracts\HasTree)) {
-            throw new \Filament\Actions\Exceptions\ActionNotResolvableException('Failed to resolve tree action for Livewire component without the ['.\IT_Delmax\FilamentTreeView\Contracts\HasTree::class.'] interface.');
+        if (! ($this instanceof \ItDelmax\FilamentTreeView\Contracts\HasTree)) {
+            throw new \Filament\Actions\Exceptions\ActionNotResolvableException('Failed to resolve tree action for Livewire component without the ['.\ItDelmax\FilamentTreeView\Contracts\HasTree::class.'] interface.');
         }
 
         $resolvedAction = null;

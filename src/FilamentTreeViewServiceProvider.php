@@ -1,6 +1,6 @@
 <?php
 
-namespace IT_Delmax\FilamentTreeView;
+namespace ItDelmax\FilamentTreeView;
 
 use Filament\Support\Assets\Css;
 use Filament\Support\Assets\Js;

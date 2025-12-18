@@ -28,18 +28,18 @@
     },
     "autoload": {
         "psr-4": {
-            "IT_Delmax\\FilamentTreeView\\": "src/"
+            "ItDelmax\\FilamentTreeView\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "IT_Delmax\\FilamentTreeView\\Tests\\": "tests/"
+            "ItDelmax\\FilamentTreeView\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "IT_Delmax\\FilamentTreeView\\FilamentTreeViewServiceProvider"
+                "ItDelmax\\FilamentTreeView\\FilamentTreeViewServiceProvider"
             ]
         }
     },

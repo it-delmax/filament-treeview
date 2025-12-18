@@ -2,7 +2,7 @@
 
 use Filament\Support\Enums\Alignment;
 use Filament\Support\Enums\FontWeight;
-use IT_Delmax\FilamentTreeView\Fields\TextField;
+use ItDelmax\FilamentTreeView\Fields\TextField;
 
 it('can create text field', function () {
     $field = TextField::make('name');

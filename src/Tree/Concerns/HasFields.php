@@ -1,9 +1,9 @@
 <?php
 
-namespace IT_Delmax\FilamentTreeView\Tree\Concerns;
+namespace ItDelmax\FilamentTreeView\Tree\Concerns;
 
 use Illuminate\Database\Eloquent\Model;
-use IT_Delmax\FilamentTreeView\Fields\Field;
+use ItDelmax\FilamentTreeView\Fields\Field;
 
 trait HasFields
 {

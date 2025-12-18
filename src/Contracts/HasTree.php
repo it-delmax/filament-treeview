@@ -1,10 +1,10 @@
 <?php
 
-namespace IT_Delmax\FilamentTreeView\Contracts;
+namespace ItDelmax\FilamentTreeView\Contracts;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\Relation;
-use IT_Delmax\FilamentTreeView\Tree;
+use ItDelmax\FilamentTreeView\Tree;
 
 interface HasTree
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace IT_Delmax\FilamentTreeView\Tests\Models;
+namespace ItDelmax\FilamentTreeView\Tests\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use IT_Delmax\FilamentTreeView\Tests\Factories\CategoryFactory;
+use ItDelmax\FilamentTreeView\Tests\Factories\CategoryFactory;
 
 class Category extends Model
 {

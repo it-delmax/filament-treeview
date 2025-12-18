@@ -1,6 +1,6 @@
 <?php
 
-use IT_Delmax\FilamentTreeView\Tests\Models\Category;
+use ItDelmax\FilamentTreeView\Tests\Models\Category;
 
 beforeEach(function () {
     // Create a tree structure for testing

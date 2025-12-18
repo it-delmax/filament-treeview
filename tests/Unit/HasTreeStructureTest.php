@@ -1,6 +1,6 @@
 <?php
 
-use IT_Delmax\FilamentTreeView\Tests\Models\Category;
+use ItDelmax\FilamentTreeView\Tests\Models\Category;
 
 it('can get parent relationship', function () {
     $parent = Category::factory()->create();

@@ -1,6 +1,6 @@
 <?php
 
-namespace IT_Delmax\FilamentTreeView\Tests;
+namespace ItDelmax\FilamentTreeView\Tests;
 
 use BladeUI\Heroicons\BladeHeroiconsServiceProvider;
 use BladeUI\Icons\BladeIconsServiceProvider;
@@ -10,7 +10,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Schema;
 use Livewire\LivewireServiceProvider;
-use IT_Delmax\FilamentTreeView\FilamentTreeViewServiceProvider;
+use ItDelmax\FilamentTreeView\FilamentTreeViewServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
 
 class TestCase extends Orchestra

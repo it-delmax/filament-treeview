@@ -1,6 +1,6 @@
 <?php
 
-namespace IT_Delmax\FilamentTreeView\Resources\Pages;
+namespace ItDelmax\FilamentTreeView\Resources\Pages;
 
 use Closure;
 use Filament\Actions\Action;
@@ -13,9 +13,9 @@ use Illuminate\Contracts\Support\Htmlable;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation;
-use IT_Delmax\FilamentTreeView\Concerns\InteractsWithTree;
-use IT_Delmax\FilamentTreeView\Contracts\HasTree;
-use IT_Delmax\FilamentTreeView\Tree;
+use ItDelmax\FilamentTreeView\Concerns\InteractsWithTree;
+use ItDelmax\FilamentTreeView\Contracts\HasTree;
+use ItDelmax\FilamentTreeView\Tree;
 
 class TreePage extends Page implements HasTree
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace IT_Delmax\FilamentTreeView\Fields;
+namespace ItDelmax\FilamentTreeView\Fields;
 
 use Illuminate\Database\Eloquent\Model;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace IT_Delmax\FilamentTreeView;
+namespace ItDelmax\FilamentTreeView;
 
 use Filament\Support\Components\ViewComponent;
 use Filament\Support\Concerns\HasExtraAttributes;
-use IT_Delmax\FilamentTreeView\Contracts\HasTree;
+use ItDelmax\FilamentTreeView\Contracts\HasTree;
 
 class Tree extends ViewComponent
 {
