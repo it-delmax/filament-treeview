@@ -300,6 +300,18 @@
     transition: background-color var(--tree-transition-normal);
 }
 
+.filament-tree-filter {    
+    border-radius: var(--tree-border-radius) !important;
+    border: 1px solid var(--gray-300) !important;
+    padding: calc(var(--spacing)*2) !important;
+    box-shadow: var(--tree-shadow-sm) !important;    
+}
+
+.dark .filament-tree-filter {
+    background-color: var(--gray-900) !important;
+    border-color: var(--tree-border-dark) !important;    
+}
+
 /* Optional: Show visual feedback when dragging (can be enabled if desired) */
 
 /* Toggle Field Icon Colors - Use Filament's color system */

@@ -158,7 +158,7 @@
                 ></div>
             </div>
         @else
-            <div class="rounded-xl bg-white px-6 py-12 shadow-sm ring-1 ring-gray-950/5 dark:bg-gray-900 dark:ring-white/10">
+            <div class="rounded-xl px-6 py-12 shadow-sm ring-1 ring-gray-950/5 dark:bg-gray-900 dark:ring-white/10">
                 <div class="mx-auto grid max-w-lg justify-items-center text-center">
                     <p class="text-sm text-gray-500 dark:text-gray-400">{{ __('filament-treeview::tree.no_records') }}</p>
                 </div>

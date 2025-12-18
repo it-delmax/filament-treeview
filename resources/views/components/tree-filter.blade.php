@@ -13,7 +13,7 @@
 </div>
        
 @if ($this->filterValue)
-    <div class="flex items-start gap-x-4 shadow-sm bg-white dark:bg-gray-900 -mb-3 p-2 rounded-sm ring-1 ring-gray-950/5 dark:ring-white/10">
+    <div class="filament-tree-filter flex items-start gap-x-4 -mb-3">
         <span class="text-sm dark:text-gray-200">Aktivan filter:</span>		            
         <x-filament::badge style="cursor: pointer" x-on:click="$wire.clearFilter()" color="warning" icon="heroicon-m-x-mark" icon-position="after">
             {{ $this->filterValue }}               
