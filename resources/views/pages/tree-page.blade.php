@@ -2,7 +2,7 @@
     @if ($tree = $this->getTree())
         @php
             $records = $this->getTreeRecords();
-            $canModify = auth()->user()->can('update');            
+            $canModify = auth()->user()->can('update', $tree->getQuery()->getModel());            
         @endphp
 
         {{-- Inline script to prevent flash of wrong expand state --}}

@@ -93,8 +93,8 @@ trait InteractsWithTree
         foreach ($nodes as $node) {
             // Check if this node belongs to the requested parent level
             $isMatch = $parentId === null
-                ? $this->isRootValue($node->{$parentKeyName})
-                : $node->{$parentKeyName} == $parentId;
+                ? $this->isRootValue($node->parent_id)
+                : $node->parent_id == $parentId;
 
             if ($isMatch) {
                 $children = $this->buildNestedArray($nodes, $node->id);
@@ -135,15 +135,15 @@ trait InteractsWithTree
         }
 
         // Get the parent key name from the model
-        $parentKeyName = $node->parent_id;
+        $parentKeyName = 'parent_id';
 
         // Remember old parent
-        $oldParentId = $node->{$parentKeyName};
+        $oldParentId = $node->parent_id;
 
         // Move to new parent
         // Frontend sends -1 for root, convert to model's root value
         $rootValue = $this->getRootParentValue();
-        $node->{$parentKeyName} = $newParentId === -1 ? $rootValue : $newParentId;
+        $node->parent_id = $newParentId === -1 ? $rootValue : $newParentId;
         $node->save();
 
         // Reorder siblings in old parent
@@ -159,8 +159,8 @@ trait InteractsWithTree
     {
         $query = $this->getTree()->getQuery();
         $model = $query->getModel();
-        $rootValue = $model->getParentKeyDefaultValue();
-        $parentKeyName = $model->parent_id;
+        $rootValue = null;
+        $parentKeyName = 'parent_id';
 
         // Use the configured tree query as base
         $siblings = clone $query;
@@ -192,8 +192,8 @@ trait InteractsWithTree
     {
         $query = $this->getTree()->getQuery();
         $model = $query->getModel();
-        $rootValue = $model->getParentKeyDefaultValue();
-        $parentKeyName = $model->parent_id;
+        $rootValue = null;
+        $parentKeyName = 'parent_id';
 
         // Use the configured tree query as base
         $siblings = clone $query;
