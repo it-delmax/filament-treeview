@@ -281,7 +281,7 @@ trait InteractsWithTree
      * @param  array<array<string, mixed>>  $actions
      * @return array<\Filament\Actions\Action>
      */
-    protected function resolveActions(array $actions): array
+    protected function resolveActions(array $actions, bool $isMounting = true): array
     {
         $resolvedActions = [];
 
@@ -297,7 +297,7 @@ trait InteractsWithTree
                 $resolvedAction = $this->resolveTreeAction($action, $resolvedActions);
             } else {
                 // Fall back to parent resolution (handles schemaComponent, table, and regular actions)
-                $resolvedAction = parent::resolveActions([$actionNestingIndex => $action])[0] ?? null;
+                $resolvedAction = parent::resolveActions([$actionNestingIndex => $action], $isMounting)[0] ?? null;
 
                 if (! $resolvedAction) {
                     continue;
